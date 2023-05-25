@@ -1,0 +1,340 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+  font-family: 'Nekst';
+  src: url('../public/fonts/Nekst-Regular/Nekst-Regular.eot');
+  src: local('Nekst'), local('Nekst-Regular'),
+    url('../public/fonts/Nekst-Regular/Nekst-Regular.woff2') format('woff2'),
+    url('../public/fonts/Nekst-Regular/Nekst-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nekst';
+  src: url('../public/fonts/Nekst-Black/Nekst-Black.eot');
+  src: local('Nekst Black'), local('Nekst-Black'),
+    url('../public/fonts/Nekst-Black/Nekst-Black.woff2') format('woff2'),
+    url('../public/fonts/Nekst-Black/Nekst-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../public/fonts/Gilroy-Regular/Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('../public/fonts/Nekst-Regular/Nekst-Regular.woff2') format('woff2'),
+    url('../public/fonts/Nekst-Regular/Nekst-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../public/fonts/Gilroy-Bold/Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('../public/fonts/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
+    url('../public/fonts/Gilroy-Bold/Gilroy-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  padding-left: 50px;
+
+  &__inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 100px;
+  }
+
+  &__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+
+}
+
+.title {
+  padding: 100px 500px 0 0;
+  font-family: 'Nekst';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 90%;
+}
+
+.form {
+  position: relative;
+
+  &__box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 25px;
+  }
+
+  &__title {
+    color: rgba(87, 87, 87, 1);
+    padding-bottom: 25px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+
+
+  &__input {
+    width: 100%;
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgba(87, 87, 87, 1);
+    background-color: #F3F3F4;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+  }
+
+  &__input:focus-visible {
+    outline: none;
+  }
+
+  &__span {
+    position: absolute;
+    right: 11%;
+    top: 25%;
+    color: rgba(87, 87, 87, 1);
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+}
+
+.form__input_percent {
+  color: #F3F3F4;
+}
+
+.percent__span {
+  position: absolute;
+  left: 4%;
+  top: 25%;
+  color: rgba(87, 87, 87, 1);
+  font-family: 'Nekst-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.result {
+  margin: 100px 0 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  &__description {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #575757;
+  }
+
+  &__value {
+    padding-top: 10px;
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 90%;
+    color: #333333;
+  }
+
+}
+
+.btn {
+  padding: 15px 60px;
+  font-family: 'Nekst-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  background: #FF9514;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+
+.range {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 80%;
+  left: 20px;
+  background-color: rgba(255, 149, 20, 1);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 3px;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  border-radius: 10px;
+  border: 1px solod rgba(255, 149, 20, 1);
+  background-color: rgba(255, 149, 20, 1);
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.range:focus-visible {
+  outline: none;
+}
+
+@media (max-width:1121px) {
+
+  .btn {
+    padding: 15px 15px;
+    font-size: 28px;
+  }
+}
+
+@media(max-width: 950px) {
+  .title {
+    padding-right: 250px;
+  }
+}
+
+@media (max-width: 850px) {
+  .form {
+    margin-bottom: 20px;
+  }
+
+  .form__box {
+    width: auto;
+  }
+
+  .title {
+    padding-right: 150px;
+  }
+
+  .container__inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .container__bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .btn {
+    margin: 50px 0 0 30px;
+    padding: 20px;
+  }
+}
+
+@media(max-width:650px) {
+  .title {
+    padding-right: 0;
+    padding-top: 20px;
+  }
+}
+
+@media(max-width:450px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .container__inputs {
+    padding-top: 30px;
+  }
+
+  .form__box {
+    margin: 0;
+  }
+
+  .title {
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 90%;
+  }
+
+  .form__title {
+    font-size: 14px;
+    line-height: 136%;
+  }
+
+  .result {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .result__value,
+  .form__input,
+  .percent__span,
+  .form__span {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  .btn {
+    font-size: 22px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+}
