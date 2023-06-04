@@ -4,7 +4,6 @@ import ResultDiv from './components/ResultDiv';
 import Input from './components/Input';
 import InputPercent from './components/InputPercent';
 
-
 function App() {
 
   const [price, setPrice] = useState(10000);
